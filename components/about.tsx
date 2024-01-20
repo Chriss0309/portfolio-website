@@ -6,45 +6,30 @@ import SectionHeading from './section-heading';
 import { useSectionInView } from "@/lib/hooks";
 
 
+
 export default function About() {
   const { ref } = useSectionInView("About");
-    
+  
+
+
   return (
     <motion.section
         ref={ref}
-        className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+        className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 text-white" 
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.175 }}
         id="about"
     >
-        <SectionHeading>About me</SectionHeading>
+        <SectionHeading className="baskerville-font">About me</SectionHeading>
 
-        <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-        </p>
-
-        <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <p className="mb-3 text-lg baskerville-font" >
+          As a sophomore at Wilfrid Laurier University majoring in computer science, my academic journey
+          is deeply rooted in a fascination with AI and machine learning. This passion has fueled the creation 
+          of various side projects in these fields, details of which are showcased below. Additionally, I've ventured into
+          developing gaming projects to hone my skills in data structures and object-oriented programming.
+          I am keenly interested in exploring new technological frontiers and acquiring fresh knowledge.
+          Currently, I am actively seeking internship opportunities that will foster my growth and development as a budding software engineer.
         </p>
 
 

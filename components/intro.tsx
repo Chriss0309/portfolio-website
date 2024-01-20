@@ -46,14 +46,13 @@ export default function Intro() {
         </div>
 
         <motion.h1
-          className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+          className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-white "
           initial={{ opacity: 0, y: 100}}
           animate={{ opacity: 1, y: 0}}
         >
-          <span className="font-bold">Hello, I'm Christopher.</span> I've been sucking{" "}
-          <span className="font-bold">a big ass dick</span> with{" "}
-          <span className="font-bold">8 years</span> of experience. I enjoy
-          building <span className="italic">sites & apps</span>. 
+          <span className="font-bold">Greetings, I'm Christopher!</span> This is my personal portfolio, a space where I present everything {" "}
+          <span className="font-bold">pertinent</span> about my professional journey. Feel free to scroll down and explore my {" "}
+          <span className="font-bold">side projects, expertise, and professional background...</span>
         </motion.h1>
 
 

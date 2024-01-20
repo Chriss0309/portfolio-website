@@ -2,9 +2,16 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import { HiBuildingLibrary } from "react-icons/hi2";
+
+
+import cryptomodelImg from "@/public/cryptomodel.jpg";
+import chessImg from "@/public/GameOfChess.jpg";
+import platformerImg from "@/public/platformerGame.jpg";
+import clothesImg from "@/public/clothes.jpg";
+import SpaceImg from "@/public/Spacegame.png";
+
+
 
 export const links = [
   {
@@ -35,73 +42,87 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated Highschool",
+    location: "Penang, Malaysia",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Completed my high school education in Malaysia with outstanding academic achievements and active participation in a variety of extracurricular activities.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "May. 2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Salesman",
+    location: "Logitech",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Engaged in retail sales at Logitech, focusing on the demonstration and promotion of Logitech products to a diverse clientele, utilizing strong sales techniques.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "July. 2022 - Sep. 2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Comp Sci Undergraduate student",
+    location: "Waterloo, Ontario",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Currently pursuing a Bachelor’s degree in Computer Science at Wilfrid Laurier University, achieving a high GPA of 3.7 and engaging in relevant academic projects.",
+    icon: React.createElement(HiBuildingLibrary),
+    date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Cryptocurrency Prediction Model ₿",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Developed a deep learning model to predict cryptocurrency prices, utilizing Long Short-Term Memory (LSTM) networks",
+    tags: ["Python", "TensorFlow", "Keras", "Pandas"],
+    imageUrl: cryptomodelImg,
   },
   {
-    title: "rmtDev",
+    title: "Game of Chess ♟️",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Developed a fully functional chess game application in Python, featuring a user friendly interface and efficient game state management.",
+    tags: ["Python", "Pygame"],
+    imageUrl: chessImg,
   },
   {
-    title: "Word Analytics",
+    title: "2D Platformer Game 🎮",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Developed a 2D platformer game, implementing player control, collision detection, and sprite animation.",
+    tags: ["Python", "Pygame"],
+    imageUrl: platformerImg,
+  },
+  {
+    title: "Fashion MNIST Image Classification ",
+    description:
+      "Created a machine learning model to accurately classify images from the Fashion MNIST dataset.",
+    tags: ["Python", "TensorFlow", "Keras", "Matplotlib"],
+    imageUrl: clothesImg,
+  },
+  {
+    title: "Space Shooting Game ",
+    description:
+      "Built using Python and the Pygame library. Players navigate a spacecraft, battling against waves of enemy ships. ",
+    tags: ["Python", "Pygame"],
+    imageUrl: SpaceImg,
   },
 ] as const;
 
 export const skillsData = [
   "HTML",
   "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
+  "Python",
+  "Java",
+  "Keras",
+  "TensorFlow",
+  "NumPy",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
+  "Flask",
   "Django",
+  "Matplotlib",
+  "Pygame",
+  "NLTK",
+  "Scikit-Learn",
+  "SpeechRecognition",
+  "gTTS",
+  "playsound",
   "Framer Motion",
 ] as const;

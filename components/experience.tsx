@@ -22,7 +22,7 @@ export default function Experience() {
         ref={ref}
         className="scroll-mt-28 mb-28 sm:mb-40"
     >
-        <SectionHeading>My experience</SectionHeading>
+        <SectionHeading className="text-white">My experience</SectionHeading>
         <VerticalTimeline lineColor="">
             {experiencesData.map((item, index) => (
                 <React.Fragment key={index}>
@@ -39,6 +39,7 @@ export default function Experience() {
                             borderRight: "0.4rem solid #9ca3af",
                         }}
                         date={item.date}
+                        dateClassName="text-white"
                         icon={item.icon}
                         iconStyle={{
                             background: "white",
