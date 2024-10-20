@@ -58,6 +58,14 @@ export const experiencesData = [
     date: "July. 2022 - Sep. 2022",
   },
   {
+  title: "Software Engineer Intern",
+  location: "Sensoft Technologies",
+  description:
+    "As a Software Engineer Intern, I developed scalable solutions including a fan simulator used by factories to optimize operations, an energy prediction model for a hotel to improve resource efficiency, and a real-time people detection system for a rock-climbing company’s check-in process. Leveraging Python, Modbus, React, and AI tools, I enhanced automation, efficiency, and security in real-world applications. ",
+  icon: React.createElement(CgWorkAlt),
+  date: "May.2024 - Sep.2024"
+  },
+  {
     title: "Comp Sci Undergraduate student",
     location: "Waterloo, Ontario",
     description:
@@ -65,6 +73,7 @@ export const experiencesData = [
     icon: React.createElement(HiBuildingLibrary),
     date: "2023 - present",
   },
+
 ] as const;
 
 export const projectsData = [
